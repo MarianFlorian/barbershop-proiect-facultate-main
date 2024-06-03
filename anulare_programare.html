@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="utf-8">
+    <title>Anulare Programare</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">  
+    <link href="css/style.css" rel="stylesheet">   
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon">
+    <style>
+        body {
+            font-family: 'PT Sans Narrow', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #000000;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #753100;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Anulare Programare</h1>
+        <form id="cancelForm" method="post" action="procesare_anulare.php">
+            <div class="form-group">
+                <label for="telefon">Număr de telefon:</label>
+                <input type="tel" id="telefon" name="telefon" required>
+            </div>
+            <button type="submit">Anulează Programare</button>
+        </form>
+    </div>
+</body>
+</html>
